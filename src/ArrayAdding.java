@@ -8,7 +8,9 @@ public class ArrayAdding {
 
     public void getNumbers(){
         Scanner input = new Scanner(System.in);
-        for (int i = 0; i < 5; i++) {
+        System.out.print("Enter an Array Length: ");
+        int size = input.nextInt();
+        for (int i = 0; i < size; i++) {
             System.out.print("Enter an integer: ");
             int number = input.nextInt();
             arrayNumbers.add(number);
